@@ -7,9 +7,9 @@ pipeline {
         stage('Build') { 
             steps {
                 echo "Build #${env.BUILD_ID}"
-				// script {
-				//     dockerImage = docker.build("mijabr/mijabr:arm", "-f Dockerfile.arm-build-on-rpi .")
-				// }
+				script {
+				    dockerImage = docker.build("mijabr/testapp:arm", "-f Dockerfile .")
+				}
             }
         }
         stage('Test') { 
