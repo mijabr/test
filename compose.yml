@@ -1,0 +1,14 @@
+version: '3.2'
+
+volumes:
+  jenkins-home:
+
+services:
+  test:
+    image: mijabr/test:latest
+    restart: unless-stopped
+    ports:
+      - target: 5000
+        published: 80
+        protocol: tcp
+        mode: host

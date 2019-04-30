@@ -4,6 +4,9 @@
 # BUILD
 #
 
+FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7 AS arch
+
+
 FROM microsoft/dotnet:2.2-sdk AS backend
 #FROM microsoft/dotnet:2.2-sdk-stretch-arm32v7 AS backend
 WORKDIR /testcoreweb
