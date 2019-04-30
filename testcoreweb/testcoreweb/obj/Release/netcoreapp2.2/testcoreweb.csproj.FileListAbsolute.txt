@@ -1,0 +1,14 @@
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\bin\Release\netcoreapp2.2\testcoreweb.deps.json
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\bin\Release\netcoreapp2.2\testcoreweb.runtimeconfig.json
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\bin\Release\netcoreapp2.2\testcoreweb.runtimeconfig.dev.json
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\bin\Release\netcoreapp2.2\testcoreweb.dll
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\bin\Release\netcoreapp2.2\testcoreweb.pdb
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.csprojAssemblyReference.cache
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.csproj.CoreCompileInputs.cache
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.RazorAssemblyInfo.cache
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.RazorAssemblyInfo.cs
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.AssemblyInfoInputs.cache
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.AssemblyInfo.cs
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.RazorTargetAssemblyInfo.cache
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.dll
+C:\Sandbox\mijabr\test\testcoreweb\testcoreweb\obj\Release\netcoreapp2.2\testcoreweb.pdb
