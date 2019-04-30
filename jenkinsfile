@@ -1,0 +1,29 @@
+pipeline {
+    agent any 
+	environment {
+		dockerImage = ''
+	}
+	stages {
+        stage('Build') { 
+            steps {
+                echo "Build #${env.BUILD_ID}"
+				script {
+				    dockerImage = docker.build("mijabr/mijabr:arm", "-f Dockerfile.arm-build-on-rpi .")
+				}
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo "testing"
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo "Deploying stack"
+				/* script {
+				    sh "docker stack deploy --compose-file cmp-prod.yml mijabr"
+				}*/
+            }
+        }
+    }
+}
