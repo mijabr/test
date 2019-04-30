@@ -4,8 +4,8 @@
 # BUILD
 #
 
-#FROM microsoft/dotnet:2.2-sdk AS backend
-FROM microsoft/dotnet:2.2-sdk-stretch-arm32v7 AS backend
+FROM microsoft/dotnet:2.2-sdk AS backend
+#FROM microsoft/dotnet:2.2-sdk-stretch-arm32v7 AS backend
 WORKDIR /testcoreweb
 COPY testcoreweb ./
 RUN dotnet restore
