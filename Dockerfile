@@ -38,8 +38,8 @@ RUN npm run build --prod --aot
 # FINAL
 #
 
-FROM resin/armv7hf-debian as arm-build
-RUN [ "cross-build-start" ]
+#FROM resin/armv7hf-debian as arm-build
+FROM balenalib/armv7hf-alpine-node as arm-build
 
 #FROM microsoft/dotnet:2.2-aspnetcore-runtime AS final
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7 AS final
