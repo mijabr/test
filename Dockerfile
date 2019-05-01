@@ -40,6 +40,7 @@ RUN npm run build --prod --aot
 
 #FROM microsoft/dotnet:2.2-aspnetcore-runtime AS final
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7
+COPY qemu-arm-static /usr/bin/
 WORKDIR /app
 COPY --from=backend /testcoreweb/testcoreweb/bin/Release/netcoreapp2.2/publish /app
 COPY --from=front-end-build app/dist/testapp /app/wwwroot
