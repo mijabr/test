@@ -38,10 +38,17 @@ RUN npm run build --prod --aot
 # FINAL
 #
 
+FROM resin/armv7hf-debian as arm-build
+
 #FROM microsoft/dotnet:2.2-aspnetcore-runtime AS final
 FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7
 COPY qemu-arm-static /usr/bin/
+COPY --from=arm-build . .
+RUN [ "cross-build-start" ]
+
 WORKDIR /app
 COPY --from=backend /testcoreweb/testcoreweb/bin/Release/netcoreapp2.2/publish /app
 COPY --from=front-end-build app/dist/testapp /app/wwwroot
 CMD ["dotnet", "/app/testcoreweb.dll"]
+
+RUN [ "cross-build-end" ]  
