@@ -39,9 +39,10 @@ RUN npm run build --prod --aot
 #
 
 FROM resin/armv7hf-debian as arm-build
+RUN [ "cross-build-start" ]
 
 #FROM microsoft/dotnet:2.2-aspnetcore-runtime AS final
-FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7
+FROM microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim-arm32v7 AS final
 COPY qemu-arm-static /usr/bin/
 COPY --from=arm-build . .
 RUN [ "cross-build-start" ]
